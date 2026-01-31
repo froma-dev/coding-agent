@@ -77,7 +77,7 @@ if [ -f "$TARGET_FILE" ]; then
     fi
     
     # Backup existing file
-    BACKUP_FILE="${TARGET_FILE}.backup.$(date +%Y%m%d_%H%M%S)"
+    BACKUP_FILE="${TARGET_FILE}.backup-$(date +%Y%m%d-%H%M%S)"
     cp "$TARGET_FILE" "$BACKUP_FILE"
     echo -e "${GREEN}Existing file backed up to: $BACKUP_FILE${NC}"
 fi
