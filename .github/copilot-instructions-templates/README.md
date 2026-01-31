@@ -11,25 +11,38 @@ The `.github/copilot-instructions.md` file allows you to provide custom instruct
 ### 1. `basic-template.md`
 A minimal template with essential sections. Good for small projects or getting started quickly.
 
-### 2. `comprehensive-template.md`
-A detailed template covering all aspects of development guidelines. Ideal for larger projects with established conventions.
+### 2. `python-template.md`
+Comprehensive Python template with PEP 8 conventions, type hints, pytest patterns, and Python-specific best practices.
 
-### 3. `python-template.md`
-Optimized for Python projects with Python-specific conventions and best practices.
-
-### 4. `javascript-template.md`
-Tailored for JavaScript/TypeScript projects with modern JS ecosystem conventions.
-
-### 5. `opensource-template.md`
-Designed for open source projects with emphasis on contribution guidelines and community standards.
+### 3. `javascript-template.md`
+Comprehensive JavaScript template with modern ES6+ conventions, testing patterns, and Node.js best practices.
 
 ## How to Use
+
+### Using the Selection Script (Recommended)
+
+Run the interactive script to choose and copy a template:
+
+```bash
+bash .github/select-copilot-template.sh
+```
+
+The script will guide you through selecting a template and automatically copy it to `.github/copilot-instructions.md`.
+
+### Manual Copy
 
 1. Choose the template that best fits your project
 2. Copy the template to `.github/copilot-instructions.md` in your repository root
 3. Customize the template with your project-specific details
 4. Commit and push the file to your repository
-5. GitHub Copilot will automatically use these instructions when developers work in your repository
+
+```bash
+# Example: Copy the basic template
+cp .github/copilot-instructions-templates/basic-template.md .github/copilot-instructions.md
+
+# Example: Copy the Python template
+cp .github/copilot-instructions-templates/python-template.md .github/copilot-instructions.md
+```
 
 ## Tips
 
@@ -38,14 +51,3 @@ Designed for open source projects with emphasis on contribution guidelines and c
 - Update the instructions as your project evolves
 - Include examples where helpful
 - Consider linking to your full documentation for detailed guidelines
-
-## Example
-
-```bash
-# Copy a template to your repository
-cp templates/copilot-instructions/basic-template.md /path/to/your/repo/.github/copilot-instructions.md
-
-# Or create the .github directory if it doesn't exist
-mkdir -p /path/to/your/repo/.github
-cp templates/copilot-instructions/comprehensive-template.md /path/to/your/repo/.github/copilot-instructions.md
-```

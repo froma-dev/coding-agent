@@ -1,7 +1,8 @@
 # Copilot Instructions
 
 ## Project Overview
-This is a coding agent template repository that serves as a starting point for AI-powered development projects.
+<!-- Brief description of what this project does -->
+[Describe your project here]
 
 ## Code Style and Conventions
 
@@ -28,6 +29,3 @@ This is a coding agent template repository that serves as a starting point for A
 - Update README.md when adding features
 - Document public APIs
 - Include usage examples
-
----
-*This file was created using the basic-template.md from templates/copilot-instructions/*
